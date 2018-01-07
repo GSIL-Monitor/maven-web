@@ -8,4 +8,5 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(value={"classpath:spring/test.xml"})
 public abstract class BaseAbstract {
 
+
 }
