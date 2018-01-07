@@ -1,0 +1,5 @@
+com/gxp/service/BookTypeService.class
+com/gxp/model/BookTypeListModel.class
+com/gxp/quartz/QuartzMethodTwo.class
+com/gxp/service/impl/BookTypeServiceImpl.class
+com/gxp/quartz/QuartzMethodOne.class

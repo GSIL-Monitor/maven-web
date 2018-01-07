@@ -1,0 +1,6 @@
+com/gxp/mapper/GxpNameAgeMapper.class
+com/gxp/batch/BatchMapperImpl.class
+com/gxp/model/BookType.class
+com/gxp/mapper/BookTypeMapper.class
+com/gxp/batch/BatchMapper.class
+com/gxp/model/GxpNameAge.class

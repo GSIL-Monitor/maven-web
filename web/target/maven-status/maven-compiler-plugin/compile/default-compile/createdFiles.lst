@@ -1,0 +1,7 @@
+com/xxx/web/resolver/PermissionMethodInvokePreHandler.class
+com/xxx/web/controller/BaseController.class
+com/xxx/web/controller/BookTypeController.class
+com/xxx/web/controller/HomeController.class
+com/xxx/web/util/AjaxResult.class
+com/xxx/web/resolver/HomeHandlerExceptionResolver.class
+com/xxx/web/util/WebUtils.class

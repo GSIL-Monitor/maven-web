@@ -1,0 +1,4 @@
+mapper/BookTypeMapperTest.class
+service/BookTypeServiceTest.class
+base/BaseAbstract.class
+mapper/BatchMapperTest.class

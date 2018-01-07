@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <import resource="classpath*:/spring/*-beans.xml"/>
+    <import resource="classpath*:/spring/*-service.xml"/>
+
+
+    <context:component-scan base-package="com.xxx.web.controller"/>
+
+    <!--用注解的方式，统一做权限拦截-->
+
+    <!-- 错误统一拦截 -->
+    <bean name="commonHandler" class="com.xxx.web.resolver.HomeHandlerExceptionResolver"/>
+
+    <!-- 拦截器 -->
+    <mvc:interceptors>
+        <!-- 多个拦截器,顺序执行 -->
+        <mvc:interceptor>
+            <!-- 如果不配置或/*,将拦截所有的Controller -->
+            <mvc:mapping path="/web/*"/>
+            <bean class="com.xxx.web.resolver.PermissionMethodInvokePreHandler"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>
